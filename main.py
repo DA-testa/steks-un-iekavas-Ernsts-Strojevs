@@ -30,11 +30,14 @@ def find_mismatch(text):
 
 def main():
     # Printing answer, write your code here
-    text = input()
-    if 'I' in text:
+    while True: 
         text = input()
-        mismatch = find_mismatch(text)
-        print(mismatch)
+        if 'I' in text:
+            text = input()
+            mismatch = find_mismatch(text)
+            print(mismatch)
+            break
 
+        
 if __name__ == "__main__":
     main()
